@@ -1,0 +1,8 @@
+<p>亲爱的 {{ user.username }} 用户,</p>
+<p>欢迎来到 <b>Flasky</b>!</p>
+<p>确认邮箱 <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点这里</a>.</p>
+<p>或者你也可以复制链接到浏览器进行验证</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>Sincerely,</p>
+<p> Md W</p>
+<p><small>Note: replies to this email address are not monitored.</small></p>
